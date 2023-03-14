@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/estiloNava.css" rel="stylesheet" >
+</head>
+<body>
+    <header id="cabecera">Mi Curriculum Vitae</header>
+        <br>
+        <img src="img/Nava-foto.jpg" id="foto-perfil"> </img>
+        <div id="marco">
+            <h2>Datos Personales</h2>
+        <br>
+            <li>Nombre Completo: Jos&eacute; Alberto Nava Zamudio</li>
+            <li>Fecha de Nacimiento: 29/01/1999</li>
+            <li>Lugar de Nacimiento: C&oacute;rdoba, Veracruz</li> 
+        <br>
+            <h2>Formaci&oacute;n acad&eacute;mica</h2>
+        
+            <li>2020-2024 Instituto Tecnologico de Orizaba</li>
+            <li>2016-2018 Mena Sosa </li>
+            <li>2014-2016 Cobaev 12 </li>
+        <br>
+            <h2>Experencia Laboral</h2>
+
+            <li>2020 - 2023: Google</li>
+            <li>2016 - 2020: Aurrera</li>
+        </div>   
+    <div id="map"></div>
+    <a href="index.html" class="btn-1">Regresar</a>
+    <video controls id="video">
+        <source src="img/nava-presentacion.mp4" type="video/mp4">
+    </video>
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+<script>
+    function initMap() {
+    // The location of Uluru
+    const uluru = { lat: 18.882050, lng: -96.930994 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+  window.initMap = initMap;</script>
+</body>
+</html>

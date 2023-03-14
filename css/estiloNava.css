@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(25deg, blue, white);
+    height: 100vh; 
+}
+
+#marco {
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+#cabecera {
+    color: blue;
+    font-size: 35px;
+    position:  absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+}
+
+.btn-1 {
+    text-decoration-line: none;
+    padding: 10px;
+    border: 1px solid;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+#foto-perfil {
+    position: absolute;
+    top: 13%;
+    width: 200px;
+    left: 38%;
+
+}
+
+#video{
+    position: fixed;
+    top: 25%;
+    left: 3%;
+    width:440px; 
+    height:280px; 
+}
+
+h2{
+    color: cornflowerblue;
+}
+
+#map {
+    height: 200px; /* The height is 400 pixels */
+    width: 15%; /* The width is the width of the web page */
+    position: absolute;
+    left: 38%;
+    top: 48%;
+  }
+  
